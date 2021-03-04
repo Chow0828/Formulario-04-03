@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulário</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2">
+				<img src="img/curriculo.png" id="curriculo">
+			</div>
+			<!--  -->
+<!-- -->
+				<div class="col-sm-8 offset-2" id="titulo">
+					<div class="row">
+						<h1 id="titletop"> CADASTRO DE CURRÍCULO </h1>
+					</div>
+					<div class="row">
+						<div class="col-sm-12" id="workspace">
+							<!-- Início Formulário -->
+							<form>
+								<fieldset>
+									<label id="completo">Dados Pessoais</label>
+									<input type="text" name="nome" id="nome" required="">
+									<input type="date" name="data" id="data" required="">
+								</fieldset>
+								<fieldset>
+									<label for="nome" id="nome1">Nome Completo</label>
+									<label for="data" id="data1">Data de Nascimento</label>
+								</fieldset>
+								<!--  -->
+								<fieldset>
+									<input type="text" name="logradouro" id="logradouro" required="">
+								</fieldset>
+								<fieldset>
+									<label for="logradouro" id="logradouro1">Logradouro</label>
+								</fieldset>
+								<!-- COMO VERIFICAR RG E CPF? -->
+								<!-- pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" -->
+								<fieldset>
+									<input type="number" name="rg" id="rg" required="">
+									<input type="text"  name="cpf" id="cpf" required="" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+								</fieldset>
+								<fieldset>
+									<label for="rg" id="rg1">RG</label>
+									<label for="cpf" id="cpf1">CPF</label>
+								</fieldset>
+								<!--  -->
+								<fieldset>
+									<select name="status" class="status">
+										<option selected disabled value="">Selecione</option>
+										<option>SOLTEIRO(A)</option>
+										<option>NAMORANDO</option>
+										<option>CASADO(A)</option>
+									</select>
+								</fieldset>
+								<!--  -->
+								<fieldset>
+									<input type="email" name="email" id="email" required="">
+								</fieldset>
+								<fieldset>
+									<label for="email" id="email1">Email</label>
+								</fieldset>
+								<!-- CONTATOS -->
+								<fieldset>
+									<label id="completo">Contatos</label>
+									<input type="number" name="ddd" id="dddphone" required="">
+									<input type="number" name="phone" id="phone" required="">
+								</fieldset>
+								<fieldset>
+									<label for="ddd" id="dddphone1">DDD</label>
+									<label for="phone" id="phone1">Telefone</label>
+								</fieldset>
+								<!--  -->
+								<fieldset>
+									<label id="completo">Tem Filhos?</label>
+									<input type="radio" name="son" value="Sim" id="sim">Sim<br>
+									<input type="radio" name="son" value="Nao" id="nao">Não<br>
+									<label for="son"></label>
+								<!--  -->
+								<label id="carteira">Carteira de Habilitação?</label>	
+									<input type="radio" name="cnh" value="A" checked id="opcaoa">A<br>
+									<label for="cnh"></label>
+									<input type="radio" name="cnh" value="B" id="opcaob">B<br>
+									<label for="cnh"></label>
+								</fieldset>
+							</form>
+							<!-- Button Submit -->
+							<button type="submit" class="btn btn-red" id="button">Cadastrar</button>
+						</div>
+					</div>
+				</div>
+					<div class="col-sm-2 offset-8">
+					<img src="img/logo.png" alt="logo" id="logo">
+					</div>
+			</div>
+
+
+
+
+<!-- https://www.blogson.com.br/como-formatar-campos-de-cpf-cep-telefone-e-moeda-com-jquery-jmask/ -->
+
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
